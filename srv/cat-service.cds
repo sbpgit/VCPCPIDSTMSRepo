@@ -20,8 +20,6 @@ service CatalogService @(impl: './cat-service.js') {
             CHARVAL_DESC,
             IBPCHAR_CHK
     };
-
-    
     entity getLocProdActDemandAPI as projection on external.getLocProdActDemandAPI {
         LOCATION_ID ,
         PRODUCT_ID ,
