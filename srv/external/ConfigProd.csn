@@ -176,7 +176,7 @@
         }
       }
     },
-    "ConfigProd.getClassChar": {
+    "ConfigProd.getClassCharAPI": {
       "kind": "entity",
       "@cds.external": true,
       "@cds.persistence.skip": true,
