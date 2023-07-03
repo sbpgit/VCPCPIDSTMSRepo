@@ -6,7 +6,10 @@ service CatalogService @(impl: './cat-service.js') {
 
      entity getLocProdCharAPI  as projection on external.getLocProdCharAPI {
         key LOCATION_ID,
+            LOCATION_DESC,
             PRODUCT_ID,
+            PROD_DESC,
+            PROD_TYPE,
             CUSTOMER_GROUP,
             IBP_CUSTOMER,
             CLASS_NUM,
@@ -34,4 +37,5 @@ service CatalogService @(impl: './cat-service.js') {
         ADJ_QTY
     };
     entity getLocProdActDemandAPICopy as projection on external.getLocProdActDemandAPI;
+    entity getClassCharAPI as projection on external.getClassCharAPI;
 }
