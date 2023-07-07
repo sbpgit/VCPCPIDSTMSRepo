@@ -18,87 +18,87 @@
           "key": true,
           "type": "cds.String",
           "length": 4,
-          "notNull": true
+          "notNull": false
         },
         "PRODUCT_ID": {
           "key": true,
           "type": "cds.String",
           "length": 40,
-          "notNull": true
+          "notNull": false
         },
         "LOCATION_DESC": {
           "type": "cds.String",
           "length": 4,
-          "notNull": true
+          "notNull": false
         },
         "PROD_DESC": {
           "type": "cds.String",
           "length": 40,
-          "notNull": true
+          "notNull": false
         },
         "PROD_TYPE": {
           "type": "cds.String",
           "length": 4,
-          "notNull": true
+          "notNull": false
         },
         "CUSTOMER_GROUP": {
           "type": "cds.String",
           "length": 20,
-          "notNull": true
+          "notNull": false
         },
         "IBP_CUSTOMER": {
           "type": "cds.String",
           "length": 10,
-          "notNull": true
+          "notNull": false
         },
         "CLASS_NUM": {
           "type": "cds.String",
           "length": 20,
-          "notNull": true
+          "notNull": false
         },
         "CLASS_NAME": {
           "type": "cds.String",
           "length": 20,
-          "notNull": true
+          "notNull": false
         },
         "CLASS_DESC": {
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_DESC": {
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_NUM": {
           "type": "cds.String",
           "length": 30,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_NAME": {
           "type": "cds.String",
           "length": 30,
-          "notNull": true
+          "notNull": false
         },
         "CHARVAL_NUM": {
           "type": "cds.String",
           "length": 70,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_VALUE": {
           "type": "cds.String",
           "length": 70,
-          "notNull": true
+          "notNull": false
         },
         "CHARVAL_DESC": {
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         },
         "IBPCHAR_CHK": {
           "type": "cds.Boolean",
-          "notNull": true
+          "notNull": false
         }
       }
     },
@@ -111,68 +111,68 @@
           "key": true,
           "type": "cds.String",
           "length": 4,
-          "notNull": true
+          "notNull": false
         },
         "PRODUCT_ID": {
           "key": true,
           "type": "cds.String",
           "length": 40,
-          "notNull": true
+          "notNull": false
         },
         "REF_PRODID": {
           "key": true,
           "type": "cds.String",
           "length": 40,
-          "notNull": true
+          "notNull": false
         },
         "IBP_CUSTOMER": {
           "key": true,
           "type": "cds.String",
           "length": 10,
-          "notNull": true
+          "notNull": false
         },
         "WEEK_DATE": {
           "key": true,
           "type": "cds.Date",
           "@sap.display.format": "Date",
-          "notNull": true
+          "notNull": false
         },
         "CLASS_NUM": {
           "key": true,
           "type": "cds.String",
           "length": 20,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_NUM": {
           "key": true,
           "type": "cds.String",
           "length": 30,
-          "notNull": true
+          "notNull": false
         },
         "CHARVAL_NUM": {
           "key": true,
           "type": "cds.String",
           "length": 70,
-          "notNull": true
+          "notNull": false
         },
         "IBPCHAR_CHK": {
           "key": true,
           "type": "cds.Boolean",
-          "notNull": true
+          "notNull": false
         },
         "ORD_QTY": {
           "key": true,
           "type": "cds.Decimal",
           "precision": 13,
           "scale": 3,
-          "notNull": true
+          "notNull": false
         },
         "ADJ_QTY": {
           "key": true,
           "type": "cds.Decimal",
           "precision": 13,
           "scale": 3,
-          "notNull": true
+          "notNull": false
         }
       }
     },
@@ -185,66 +185,66 @@
           "key": true,
           "type": "cds.String",
           "length": 18,
-          "notNull": true
+          "notNull": false
         },
         "CLASS_NAME": {
           "key": true,
           "type": "cds.String",
           "length": 20,
-          "notNull": true
+          "notNull": false
         },
         "CLASS_DESC": {
           "key": true,
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         },
         "IBPCHAR_CHK": {
           "key": true,
           "type": "cds.Boolean",
-          "notNull": true
+          "notNull": false
         },
         "CHAR_NUM": {
           "key": true,
           "type": "cds.String",
           "length": 10,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_NAME": {
           "key": true,
           "type": "cds.String",
           "length": 30,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_DESC": {
           "key": true,
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_GROUP": {
           "key": true,
           "type": "cds.String",
           "length": 10,
-          "notNull": true
+          "notNull": false
         },
         "CHAR_VALUE": {
           "key": true,
           "type": "cds.String",
           "length": 70,
-          "notNull": true
+          "notNull": false
         },
         "CHARVAL_NUM": {
           "key": true,
           "type": "cds.String",
           "length": 70,
-          "notNull": true
+          "notNull": false
         },
         "CHARVAL_DESC": {
           "key": true,
           "type": "cds.String",
           "length": 150,
-          "notNull": true
+          "notNull": false
         }
       }
     }
