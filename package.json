@@ -6,17 +6,19 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap-cloud-sdk/http-client": "^3.1.1",
-    "@sap/cds": "^6",
-    "@sap/cds-dk": "^7.0.2",
+    "@sap-cloud-sdk/http-client": "^3.2.0",
+    "@sap/cds": "^6.8.4",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "@sap/xssec": "^3",
     "express": "^4",
     "hdb": "^0.19.0",
     "passport": "^0"
   },
+  "engines": {
+    "node": "^12 || ^14 || ^16"
+  },
   "devDependencies": {
-    "sqlite3": "^5"
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "cds-serve"

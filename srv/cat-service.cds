@@ -4,7 +4,7 @@ using {ConfigProd as external} from './external/ConfigProd.csn';
 service CatalogService @(impl: './cat-service.js') {
     // @readonly entity Books as projection on my.Books;
      entity getLocProdCharAPI  as projection on external.getLocProdCharAPI {
-        key LOCATION_ID,
+            LOCATION_ID,
             LOCATION_DESC,
             PRODUCT_ID,
             PROD_DESC,
