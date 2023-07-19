@@ -23,7 +23,7 @@
     "LOCATION_DESC": {
      "key": true,
      "type": "cds.String",
-     "length": 4,
+     "length": 30,
      "notNull": true
     },
     "PRODUCT_ID": {
@@ -203,7 +203,7 @@
     "LOCATION_DESC": {
      "key": true,
      "type": "cds.String",
-     "length": 4,
+     "length": 30,
      "notNull": true
     },
     "PRODUCT_ID": {

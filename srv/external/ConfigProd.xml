@@ -33,7 +33,7 @@
           <PropertyRef Name="IBPCHAR_CHK"/>
         </Key>
         <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
-        <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30" Nullable="false"/>
         <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
         <Property Name="PROD_DESC" Type="Edm.String" MaxLength="40" Nullable="false"/>
         <Property Name="PROD_TYPE" Type="Edm.String" MaxLength="4" Nullable="false"/>
@@ -97,7 +97,7 @@
           <PropertyRef Name="IBPCHAR_CHK"/>
         </Key>
         <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
-        <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30" Nullable="false"/>
         <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
         <Property Name="PROD_DESC" Type="Edm.String" MaxLength="40" Nullable="false"/>
         <Property Name="PROD_TYPE" Type="Edm.String" MaxLength="4" Nullable="false"/>
