@@ -11,6 +11,7 @@
         <EntitySet Name="getLocProdConfigAPI" EntityType="BTPCPIService.getLocProdConfigAPI"/>
         <EntitySet Name="getLocProdActDemandAPI" EntityType="BTPCPIService.getLocProdActDemandAPI"/>
         <EntitySet Name="getLocProdActualDemandAPI" EntityType="BTPCPIService.getLocProdActualDemandAPI"/>
+        <EntitySet Name="getMDTAssembly" EntityType="BTPCPIService.getMDTAssembly"/>
       </EntityContainer>
       <EntityType Name="getLocProdCharAPI">
         <Key>
@@ -165,6 +166,20 @@
         <Property Name="IBPCHAR_CHK" Type="Edm.Boolean" Nullable="false"/>
         <Property Name="ORD_QTY" Type="Edm.Decimal" Scale="3" Precision="13" Nullable="false"/>
         <Property Name="ADJ_QTY" Type="Edm.Decimal" Scale="3" Precision="13" Nullable="false"/>
+      </EntityType>
+      <EntityType Name="getMDTAssembly">
+        <Key>
+          <PropertyRef Name="LOCID"/>
+          <PropertyRef Name="PRDID"/>
+          <PropertyRef Name="PRDFR"/>
+          <PropertyRef Name="VCSTRUCTURENODE"/>
+          <PropertyRef Name="VCSOURCEID"/>
+        </Key>
+        <Property Name="LOCID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="PRDID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="PRDFR" Type="Edm.String" MaxLength="40" Nullable="false"/>
+        <Property Name="VCSTRUCTURENODE" Type="Edm.String" MaxLength="50" Nullable="false"/>
+        <Property Name="VCSOURCEID" Type="Edm.String" MaxLength="50" Nullable="false"/>
       </EntityType>
       <Annotations Target="BTPCPIService.getLocProdCharAPI/LOCATION_ID" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="Location"/>

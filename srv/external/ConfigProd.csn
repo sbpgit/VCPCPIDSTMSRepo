@@ -1,6 +1,6 @@
 {
  "meta": {
-  "creator": "cds-dk 7.0.2"
+  "creator": "cds-dk 7.0.3"
  },
  "$version": "2.0",
  "definitions": {
@@ -441,6 +441,43 @@
      "type": "cds.Decimal",
      "precision": 13,
      "scale": 3,
+     "notNull": true
+    }
+   }
+  },
+  "ConfigProd.getMDTAssembly": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "elements": {
+    "LOCID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 4,
+     "notNull": true
+    },
+    "PRDID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 40,
+     "notNull": true
+    },
+    "PRDFR": {
+     "key": true,
+     "type": "cds.String",
+     "length": 40,
+     "notNull": true
+    },
+    "VCSTRUCTURENODE": {
+     "key": true,
+     "type": "cds.String",
+     "length": 50,
+     "notNull": true
+    },
+    "VCSOURCEID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 50,
      "notNull": true
     }
    }
