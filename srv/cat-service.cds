@@ -10,5 +10,6 @@ service CatalogService @(impl: './cat-service.js') {
     entity getLocProdActualDemandAPI as projection on external.getLocProdActualDemandAPI;
     entity getLocProdActDemandAPICopy as projection on external.getLocProdActDemandAPI;
     entity getClassCharAPI as projection on external.getClassCharAPI;
+    // API of Master Data for Assembly
     entity getMDTAssembly as projection on external.getMDTAssembly;
 }
