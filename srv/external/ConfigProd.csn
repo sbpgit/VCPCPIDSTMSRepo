@@ -114,6 +114,18 @@
      "key": true,
      "type": "cds.Boolean",
      "notNull": true
+    },
+    "VALID_FROM": {
+     "key": true,
+     "type": "cds.Date",
+     "@sap.display.format": "Date",
+     "notNull": true
+    },
+    "VALID_TO": {
+     "key": true,
+     "type": "cds.Date",
+     "@sap.display.format": "Date",
+     "notNull": true
     }
    }
   },
@@ -293,6 +305,18 @@
     "IBPCHAR_CHK": {
      "key": true,
      "type": "cds.Boolean",
+     "notNull": true
+    },
+    "VALID_FROM": {
+     "key": true,
+     "type": "cds.Date",
+     "@sap.display.format": "Date",
+     "notNull": true
+    },
+    "VALID_TO": {
+     "key": true,
+     "type": "cds.Date",
+     "@sap.display.format": "Date",
      "notNull": true
     }
    }

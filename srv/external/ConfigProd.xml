@@ -32,6 +32,8 @@
           <PropertyRef Name="CHAR_VALUE"/>
           <PropertyRef Name="CHARVAL_DESC"/>
           <PropertyRef Name="IBPCHAR_CHK"/>
+          <PropertyRef Name="VALID_FROM"/>
+          <PropertyRef Name="VALID_TO"/>
         </Key>
         <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
         <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30" Nullable="false"/>
@@ -50,6 +52,8 @@
         <Property Name="CHAR_VALUE" Type="Edm.String" MaxLength="70" Nullable="false"/>
         <Property Name="CHARVAL_DESC" Type="Edm.String" MaxLength="150" Nullable="false"/>
         <Property Name="IBPCHAR_CHK" Type="Edm.Boolean" Nullable="false"/>
+        <Property Name="VALID_FROM" Type="Edm.DateTime" Nullable="false" sap:display-format="Date"/>
+        <Property Name="VALID_TO" Type="Edm.DateTime" Nullable="false" sap:display-format="Date"/>
       </EntityType>
       <EntityType Name="getClassCharAPI">
         <Key>
@@ -96,6 +100,8 @@
           <PropertyRef Name="CHAR_VALUE"/>
           <PropertyRef Name="CHARVAL_DESC"/>
           <PropertyRef Name="IBPCHAR_CHK"/>
+          <PropertyRef Name="VALID_FROM"/>
+          <PropertyRef Name="VALID_TO"/>
         </Key>
         <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
         <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30" Nullable="false"/>
@@ -114,6 +120,8 @@
         <Property Name="CHAR_VALUE" Type="Edm.String" MaxLength="70" Nullable="false"/>
         <Property Name="CHARVAL_DESC" Type="Edm.String" MaxLength="150" Nullable="false"/>
         <Property Name="IBPCHAR_CHK" Type="Edm.Boolean" Nullable="false"/>
+        <Property Name="VALID_FROM" Type="Edm.DateTime" Nullable="false" sap:display-format="Date"/>
+        <Property Name="VALID_TO" Type="Edm.DateTime" Nullable="false" sap:display-format="Date"/>
       </EntityType>
       <EntityType Name="getLocProdActDemandAPI">
         <Key>
@@ -232,6 +240,12 @@
       <Annotations Target="BTPCPIService.getLocProdCharAPI/IBPCHAR_CHK" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="IBPCHAR_CHK"/>
       </Annotations>
+      <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="BTPCPIService.getLocProdCharAPI/VALID_FROM">
+        <Annotation Term="Common.Label" String="Valid From"/>
+      </Annotations>
+      <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="BTPCPIService.getLocProdCharAPI/VALID_TO">
+        <Annotation Term="Common.Label" String="Valid To"/>
+      </Annotations>
       <Annotations Target="BTPCPIService.getClassCharAPI/CLASS_NUM" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="CLASS_NUM"/>
       </Annotations>
@@ -315,6 +329,12 @@
       </Annotations>
       <Annotations Target="BTPCPIService.getLocProdConfigAPI/IBPCHAR_CHK" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="IBPCHAR_CHK"/>
+      </Annotations>
+      <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="BTPCPIService.getLocProdConfigAPI/VALID_FROM">
+        <Annotation Term="Common.Label" String="Valid From"/>
+      </Annotations>
+      <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="BTPCPIService.getLocProdConfigAPI/VALID_TO">
+        <Annotation Term="Common.Label" String="Valid To"/>
       </Annotations>
       <Annotations Target="BTPCPIService.getLocProdActDemandAPI/LOCATION_ID" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="LOCATION_ID"/>
