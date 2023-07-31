@@ -3,8 +3,10 @@ using {ConfigProd as external} from './external/ConfigProd.csn';
 
 service CatalogService @(impl: './cat-service.js') {
     // @readonly entity Books as projection on my.Books;
-     entity getLocProdCharAPI  as projection on external.getLocProdCharAPI;
-     entity getLocProdConfigAPI  as projection on external.getLocProdConfigAPI;
+   
+   // Location - Product Config API with Validity Dates
+    entity getLocProdCharAPI  as projection on external.getLocProdCharAPI;
+    entity getLocProdConfigAPI  as projection on external.getLocProdConfigAPI;
     // Location/Product/Act/Demand
     entity getLocProdActDemandAPI as projection on external.getLocProdActDemandAPI;
     entity getLocProdActualDemandAPI as projection on external.getLocProdActualDemandAPI;
