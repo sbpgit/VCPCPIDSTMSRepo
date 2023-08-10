@@ -4,12 +4,12 @@
  },
  "$version": "2.0",
  "definitions": {
-  "ConfigProd": {
+  "SavedConfigAPI": {
    "kind": "service",
    "@cds.external": true,
    "@m.IsDefaultEntityContainer": "true"
   },
-  "ConfigProd.getLocProdCharAPI": {
+  "SavedConfigAPI.getLocProdCharAPI": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -129,7 +129,7 @@
     }
    }
   },
-  "ConfigProd.getClassCharAPI": {
+  "SavedConfigAPI.getClassCharAPI": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -201,7 +201,7 @@
     }
    }
   },
-  "ConfigProd.getLocProdConfigAPI": {
+  "SavedConfigAPI.getLocProdConfigAPI": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -321,7 +321,127 @@
     }
    }
   },
-  "ConfigProd.getLocProdActDemandAPI": {
+  "SavedConfigAPI.getLocProdConfigAPICopy": {
+   "kind": "entity",
+   "@cds.external": true,
+   "@cds.persistence.skip": true,
+   "elements": {
+    "LOCATION_ID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 4,
+     "notNull": true
+    },
+    "LOCATION_DESC": {
+     "key": true,
+     "type": "cds.String",
+     "length": 30,
+     "notNull": true
+    },
+    "PRODUCT_ID": {
+     "key": true,
+     "type": "cds.String",
+     "length": 40,
+     "notNull": true
+    },
+    "PROD_DESC": {
+     "key": true,
+     "type": "cds.String",
+     "length": 40,
+     "notNull": true
+    },
+    "PROD_TYPE": {
+     "key": true,
+     "type": "cds.String",
+     "length": 4,
+     "notNull": true
+    },
+    "CUSTOMER_GROUP": {
+     "key": true,
+     "type": "cds.String",
+     "length": 20,
+     "notNull": true
+    },
+    "IBP_CUSTOMER": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "notNull": true
+    },
+    "CLASS_NUM": {
+     "key": true,
+     "type": "cds.String",
+     "length": 20,
+     "notNull": true
+    },
+    "CLASS_NAME": {
+     "key": true,
+     "type": "cds.String",
+     "length": 20,
+     "notNull": true
+    },
+    "CLASS_DESC": {
+     "key": true,
+     "type": "cds.String",
+     "length": 150,
+     "notNull": true
+    },
+    "CHAR_DESC": {
+     "key": true,
+     "type": "cds.String",
+     "length": 150,
+     "notNull": true
+    },
+    "CHAR_NUM": {
+     "key": true,
+     "type": "cds.String",
+     "length": 30,
+     "notNull": true
+    },
+    "CHAR_NAME": {
+     "key": true,
+     "type": "cds.String",
+     "length": 30,
+     "notNull": true
+    },
+    "CHARVAL_NUM": {
+     "key": true,
+     "type": "cds.String",
+     "length": 70,
+     "notNull": true
+    },
+    "CHAR_VALUE": {
+     "key": true,
+     "type": "cds.String",
+     "length": 70,
+     "notNull": true
+    },
+    "CHARVAL_DESC": {
+     "key": true,
+     "type": "cds.String",
+     "length": 150,
+     "notNull": true
+    },
+    "IBPCHAR_CHK": {
+     "key": true,
+     "type": "cds.Boolean",
+     "notNull": true
+    },
+    "VALID_FROM": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "notNull": true
+    },
+    "VALID_TO": {
+     "key": true,
+     "type": "cds.String",
+     "length": 10,
+     "notNull": true
+    }
+   }
+  },
+  "SavedConfigAPI.getLocProdActDemandAPI": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -395,7 +515,7 @@
     }
    }
   },
-  "ConfigProd.getLocProdActualDemandAPI": {
+  "SavedConfigAPI.getLocProdActualDemandAPI": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -469,7 +589,7 @@
     }
    }
   },
-  "ConfigProd.getMDTAssembly": {
+  "SavedConfigAPI.getMDTAssembly": {
    "kind": "entity",
    "@cds.external": true,
    "@cds.persistence.skip": true,
@@ -506,7 +626,7 @@
     }
    }
   },
-  "ConfigProd.cp_ds_UniqueIdDetails": {
+  "SavedConfigAPI.cp_ds_UniqueIdDetails": {
    "kind": "type",
    "@cds.external": true,
    "elements": {
@@ -532,13 +652,13 @@
     },
     "characteristics": {
      "items": {
-      "type": "ConfigProd.cp_ds_UniqueItems",
+      "type": "SavedConfigAPI.cp_ds_UniqueItems",
       "notNull": true
      }
     }
    }
   },
-  "ConfigProd.cp_ds_UniqueItems": {
+  "SavedConfigAPI.cp_ds_UniqueItems": {
    "kind": "type",
    "@cds.external": true,
    "elements": {
@@ -552,13 +672,13 @@
     }
    }
   },
-  "ConfigProd.generateUniqueId": {
+  "SavedConfigAPI.generateUniqueId": {
    "kind": "action",
    "@cds.external": true,
    "params": {
     "vcRulesList": {
      "items": {
-      "type": "ConfigProd.cp_ds_UniqueIdDetails",
+      "type": "SavedConfigAPI.cp_ds_UniqueIdDetails",
       "notNull": true
      }
     }

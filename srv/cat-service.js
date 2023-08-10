@@ -8,7 +8,9 @@ module.exports = cds.service.impl(async function() {
 	const { getProdCharAPI } = this.entities;
 	const { getClassCharAPI } = this.entities;
 	const { getMDTAssembly } = this.entities;
+	const { generateUniqueId } = this.entities;
 	const service = await cds.connect.to('ConfigProd');
+	const servicePost = await cds.connect.to('SavedConfigAPI');
 	this.on('READ', getLocProdCharAPI, request => {
 		return service.tx(request).run(request.query);
 	});
@@ -29,5 +31,9 @@ module.exports = cds.service.impl(async function() {
 	});
 	this.on('READ', getMDTAssembly, request => {
 		return service.tx(request).run(request.query);
+	});
+	this.on(generateUniqueId, async (request) => {
+		let response = await servicePost.tx(request).post("/generateUniqueId", request.data);
+		request._.req.res.send(response.values[0].sMessage);
 	});
 });

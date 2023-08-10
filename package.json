@@ -46,10 +46,29 @@
           }
         }
       },
+      "SavedConfigAPI": {
+        "kind": "odata-v4",
+        "model": "srv/external/SavedConfigAPI",
+        "[development]": {
+          "credentials": {
+            "url": "https://sbpbtp-vcpprovider-sc0jeojq-dev-config-products-srv.cfapps.us10.hana.ondemand.com/btpcpi",
+            "authentication": "BasicAuthentication",
+            "username": "S0017717840",
+            "password": "Th@kur18"
+          }
+        },
+        "[production]": {
+          "credentials": {
+            "destination": "ConfigProd",
+            "path": "/btpcpi"
+          }
+        }
+      },
       "auth": {
         "kind": "xsuaa",
         "restrict_all_services": false
       }
+      
     },
     "hana": {
       "deploy-format": "hdbtable",
