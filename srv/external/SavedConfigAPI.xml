@@ -238,7 +238,7 @@
       <ComplexType Name="cp_ds_UniqueIdDetails">
         <Property Name="product" Type="Edm.String" MaxLength="40"/>
         <Property Name="externalIdentification" Type="Edm.String" MaxLength="40"/>
-        <Property Name="uniqueIDDescription" Type="Edm.String" MaxLength="50"/>
+        <Property Name="uniqueIDDescription" Type="Edm.String" MaxLength="100"/>
         <Property Name="validFrom" Type="Edm.String" MaxLength="10"/>
         <Property Name="validTo" Type="Edm.String" MaxLength="10"/>
         <Property Name="characteristics" Type="Collection(BTPCPIService.cp_ds_UniqueItems)" Nullable="false"/>

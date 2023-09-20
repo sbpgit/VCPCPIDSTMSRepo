@@ -640,7 +640,7 @@
     },
     "uniqueIDDescription": {
      "type": "cds.String",
-     "length": 50
+     "length": 100
     },
     "validFrom": {
      "type": "cds.String",
