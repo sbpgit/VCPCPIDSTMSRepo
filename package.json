@@ -65,10 +65,11 @@
         }
       },
       "auth": {
-        "kind": "xsuaa",
-        "restrict_all_services": false
+        "[production]": {
+          "strategy": "JWT"
+        },
+        "kind": "xsuaa"
       }
-      
     },
     "hana": {
       "deploy-format": "hdbtable",

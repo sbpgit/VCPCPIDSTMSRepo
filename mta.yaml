@@ -38,6 +38,22 @@ modules:
     requires:
       - name: config_products_cpids-db
 
+  - name: config_products_cpids
+    type: approuter.nodejs
+    path: app/ # from cds.env.folders. Consider also cds.env.build.target -> gen/app
+    parameters:
+      keep-existing-routes: true
+      disk-quota: 256M
+      memory: 256M
+    requires:
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api # must be used in xs-app.json as well
+          url: ~{srv-url}
+          forwardAuthToken: true
+      - name: config_products_cpids-auth
+
 resources:
   - name: config_products_cpids-db
     type: com.sap.xs.hdi-container

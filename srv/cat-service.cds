@@ -18,3 +18,9 @@ service CatalogService @(impl: './cat-service.js') {
     // Saved Configuration API
     action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails);
 }
+
+service APIService @(impl: './cat-service.js') @(requires: 'authenticated-user'){
+
+ action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails) returns externalAPI.cp_ds_uniqueIDFnResponse;
+
+}

@@ -626,6 +626,25 @@
     }
    }
   },
+  "SavedConfigAPI.cp_ds_uniqueIDFnResponse": {
+   "kind": "type",
+   "@cds.external": true,
+   "elements": {
+    "Type": {
+     "type": "cds.String",
+     "length": 15
+    },
+    "Description": {
+     "type": "cds.LargeString"
+    },
+    "statusCode": {
+     "type": "cds.Integer"
+    },
+    "resultData": {
+     "type": "cds.LargeString"
+    }
+   }
+  },
   "SavedConfigAPI.cp_ds_UniqueIdDetails": {
    "kind": "type",
    "@cds.external": true,

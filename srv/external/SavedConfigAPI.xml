@@ -235,6 +235,12 @@
         <Property Name="VCSTRUCTURENODE" Type="Edm.String" MaxLength="50" Nullable="false"/>
         <Property Name="VCSOURCEID" Type="Edm.String" MaxLength="50" Nullable="false"/>
       </EntityType>
+      <ComplexType Name="cp_ds_uniqueIDFnResponse">
+        <Property Name="Type" Type="Edm.String" MaxLength="15"/>
+        <Property Name="Description" Type="Edm.String"/>
+        <Property Name="statusCode" Type="Edm.Int32"/>
+        <Property Name="resultData" Type="Edm.String"/>
+      </ComplexType>
       <ComplexType Name="cp_ds_UniqueIdDetails">
         <Property Name="product" Type="Edm.String" MaxLength="40"/>
         <Property Name="externalIdentification" Type="Edm.String" MaxLength="40"/>
