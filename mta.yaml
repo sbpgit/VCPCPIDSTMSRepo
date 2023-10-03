@@ -19,6 +19,9 @@ modules:
       memory: 256M
     build-parameters:
       builder: npm-ci
+      ignore:
+        - env
+        - ./node_modules
     provides:
       - name: srv-api # required by consumers of CAP services (e.g. approuter)
         properties:
