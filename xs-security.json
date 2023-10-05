@@ -6,6 +6,10 @@
     {
       "name": "uaa.user",
       "description": "UAA"
+    },
+    {
+      "name": "$XSAPPNAME.admin",
+      "description": "admin"
     }
   ],
   "attributes": [],
@@ -15,6 +19,13 @@
       "description": "UAA",
       "scope-references": [
         "uaa.user"
+      ]
+    },
+    {
+      "name": "admin",
+      "description": "admin Role",
+      "scope-references": [
+        "$XSAPPNAME.admin"
       ]
     }
   ],
