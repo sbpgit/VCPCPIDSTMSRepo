@@ -34,6 +34,6 @@ module.exports = cds.service.impl(async function() {
 	});
 	this.on(generateUniqueId, async (request) => {
 		let response = await servicePost.tx(request).post("/generateUniqueId", request.data);
-		request._.req.res.send(response.values[0].sMessage);
+		request._.req.res.send(response);
 	});
 });

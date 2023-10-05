@@ -2,24 +2,30 @@
 POST http://localhost:4004/catalog/generateUniqueId
 Content-Type: application/json
 
-{
-     "vcRulesList": [
-           {
-            "product": "VCP_AS02",
-            "externalIdentification": "T00000027",
-            "uniqueIDDescription": "Testing",
-            "validFrom": "2023-01-01",
-            "validTo": "2023-12-31",
-            "characteristics": [
-            {
-                "characteristic": "VCP_ZA01",
-                "characteristicValue": "ZA01"
-              },
-              {
-                "characteristic": "VCP_ZD01",
-                "characteristicValue": "ZD01"
-              }
-        ]
-    }
+{ 
+     "vcRulesList": [ 
+            {            
+
+                      "product": "VCP_100",
+
+                      "externalIdentification": "ex1",
+
+                      "uniqueIDDescription": "Test",
+
+                      "validFrom": "2023-08-01",
+
+                      "validTo": "9999-12-31",
+
+                      "characteristics": [               
+
+                         { "characteristic": "CAMREAS", "characteristicValue": "C001234" },
+
+                         { "characteristic": "CAMREAS", "characteristicValue": "C00123456" }
+
+                ]
+
+                }
+
   ]
+
 }
