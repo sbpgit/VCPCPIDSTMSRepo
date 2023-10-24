@@ -716,6 +716,18 @@
      }
     }
    }
+  },
+  "SavedConfigAPI.deactivateUniqueID": {
+   "kind": "action",
+   "@cds.external": true,
+   "params": {
+    "vcRulesList": {
+     "items": {
+      "type": "SavedConfigAPI.cp_ds_UniqueIdStatus",
+      "notNull": true
+     }
+    }
+   }
   }
  }
 }

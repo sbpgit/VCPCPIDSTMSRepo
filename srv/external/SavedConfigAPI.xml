@@ -16,6 +16,9 @@
         <FunctionImport Name="generateUniqueId" m:HttpMethod="POST">
           <Parameter Name="vcRulesList" Type="Collection(BTPCPIService.cp_ds_UniqueIdDetails)" Nullable="false" Mode="In"/>
         </FunctionImport>
+        <FunctionImport Name="deactivateUniqueID" m:HttpMethod="POST">
+          <Parameter Name="vcRulesList" Type="Collection(BTPCPIService.cp_ds_UniqueIdStatus)" Nullable="false" Mode="In"/>
+        </FunctionImport>
       </EntityContainer>
       <EntityType Name="getLocProdCharAPI">
         <Key>
