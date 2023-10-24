@@ -9,6 +9,7 @@ module.exports = cds.service.impl(async function() {
 	const { getClassCharAPI } = this.entities;
 	const { getMDTAssembly } = this.entities;
 	const { generateUniqueId } = this.entities;
+	const { deactivateUniqueID } = this.entities;
 	const service = await cds.connect.to('ConfigProd');
 	const servicePost = await cds.connect.to('SavedConfigAPI');
 	this.on('READ', getLocProdCharAPI, request => {
