@@ -691,6 +691,20 @@
     }
    }
   },
+  "SavedConfigAPI.cp_ds_UniqueIdStatus": {
+   "kind": "type",
+   "@cds.external": true,
+   "elements": {
+    "product": {
+     "type": "cds.String",
+     "length": 40
+    },
+    "externalIdentification": {
+     "type": "cds.String",
+     "length": 40
+    }
+   }
+  },
   "SavedConfigAPI.generateUniqueId": {
    "kind": "action",
    "@cds.external": true,

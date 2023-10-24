@@ -253,6 +253,10 @@
         <Property Name="characteristic" Type="Edm.String" MaxLength="30"/>
         <Property Name="characteristicValue" Type="Edm.String" MaxLength="70"/>
       </ComplexType>
+      <ComplexType Name="cp_ds_UniqueIdStatus">
+        <Property Name="product" Type="Edm.String" MaxLength="40"/>
+        <Property Name="externalIdentification" Type="Edm.String" MaxLength="40"/>
+      </ComplexType>
       <Annotations Target="BTPCPIService.getLocProdCharAPI/LOCATION_ID" xmlns="http://docs.oasis-open.org/odata/ns/edm">
         <Annotation Term="Common.Label" String="Location"/>
       </Annotations>

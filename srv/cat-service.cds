@@ -22,5 +22,5 @@ service CatalogService @(impl: './cat-service.js') {
 service APIService @(impl: './cat-service.js') @(requires: 'authenticated-user'){
 
  action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails) returns externalAPI.cp_ds_uniqueIDFnResponse;
-
+ action deactivateUniqueID(vcRulesList : array of externalAPI.cp_ds_UniqueIdStatus) returns externalAPI.cp_ds_uniqueIDFnResponse;
 }
