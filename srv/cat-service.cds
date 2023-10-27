@@ -16,12 +16,13 @@ service CatalogService @(impl: './cat-service.js') {
     // API of Master Data for Assembly
     entity getMDTAssembly as projection on external.getMDTAssembly;
     // Saved Configuration API
-    action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails) returns externalAPI.cp_ds_uniqueIDFnResponse;
-    action deactivateUniqueID(vcRulesList : array of externalAPI.cp_ds_UniqueIdStatus) returns externalAPI.cp_ds_uniqueIDFnResponse;
+    // action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails) returns externalAPI.cp_ds_uniqueIDFnResponse;
+    // action deactivateUniqueID(vcRulesList : array of externalAPI.cp_ds_UniqueIdStatus) returns externalAPI.cp_ds_uniqueIDFnResponse;
 }
 
 service APIService @(impl: './cat-service.js') @(requires: 'authenticated-user'){
-
+ // Saved Config APIs
  action generateUniqueId(vcRulesList : array of externalAPI.cp_ds_UniqueIdDetails) returns externalAPI.cp_ds_uniqueIDFnResponse;
- action deactivateUniqueID(vcRulesList : array of externalAPI.cp_ds_UniqueIdStatus) returns externalAPI.cp_ds_uniqueIDFnResponse;
+//  action deactivateUniqueID(vcRulesList : array of externalAPI.cp_ds_UniqueIdStatus) returns externalAPI.cp_ds_uniqueIDFnResponse;
+
 }
