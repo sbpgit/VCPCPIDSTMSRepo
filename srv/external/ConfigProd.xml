@@ -24,7 +24,6 @@
           <PropertyRef Name="PROD_DESC"/>
           <PropertyRef Name="PROD_TYPE"/>
           <PropertyRef Name="CUSTOMER_GROUP"/>
-          <PropertyRef Name="IBP_CUSTOMER"/>
           <PropertyRef Name="CLASS_NUM"/>
           <PropertyRef Name="CLASS_NAME"/>
           <PropertyRef Name="CLASS_DESC"/>

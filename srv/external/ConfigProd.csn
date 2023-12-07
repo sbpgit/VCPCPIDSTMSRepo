@@ -50,12 +50,6 @@
      "length": 20,
      "notNull": true
     },
-    "IBP_CUSTOMER": {
-     "key": true,
-     "type": "cds.String",
-     "length": 10,
-     "notNull": true
-    },
     "CLASS_NUM": {
      "key": true,
      "type": "cds.String",
